@@ -58,9 +58,16 @@ public class Profesionales extends Profesores {
     
     }
     
-    public static void main(String[] args){
-    //parte de Nicole
-    
+        public static void main(String[] args) {
+        //Nicole
+        Profesionales profesional1 = new Profesionales();
+        profesional1.setNombre(JOptionPane.showInputDialog("Ingrese el nombre del profesor"));
+        profesional1.setEdad(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad del profesor")));
+        profesional1.setGenero(JOptionPane.showInputDialog("Ingrese el genero del profesor").charAt(0));
+        profesional1.setNombre(JOptionPane.showInputDialog("Ingrese cuantos titulos tiene el profesor"));
+        profesional1.setNombre(JOptionPane.showInputDialog("Ingrese cual grado da el profesor"));
+        profesional1.setNombre(JOptionPane.showInputDialog("Ingrese cual materia da el profesor"));
+        profesional1.imprimirDatos();
     }
 }
 
